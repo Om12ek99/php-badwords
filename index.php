@@ -8,10 +8,18 @@
 
 <body>
     <section>
+        <?php
+        echo "Sostituisci parola";
+         ?>
+         <br>
         <!-- form -->
         <form action="analyzer.php" method="GET">
-            <input type="text" name="parag"> 
-            <input type="text" name="banned">  
+            <label for="parah"> Paragrafo</label>
+            <input type="text" id="parag" name="parag"> 
+            <br>
+            <label for="banned"> Parola da censurare</label>
+            <input type="text" id="banned" name="banned">
+            <br>  
             <button type="submit">Censura</button> 
         </form>
     </section>
